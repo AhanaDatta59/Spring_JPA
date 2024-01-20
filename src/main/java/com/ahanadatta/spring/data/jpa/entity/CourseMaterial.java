@@ -26,7 +26,11 @@ public class CourseMaterial {
     private Long courseMaterialId;
     private String url;
 
-    @OneToOne
+    @OneToOne(
+            cascade = CascadeType.ALL,
+            fetch = FetchType.LAZY,
+            optional = false
+    )
     @JoinColumn(
         name = "course_id",
             referencedColumnName = "courseId"
