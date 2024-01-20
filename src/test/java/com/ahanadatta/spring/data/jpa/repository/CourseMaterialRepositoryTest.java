@@ -20,13 +20,13 @@ class CourseMaterialRepositoryTest {
     public void SaveCourseMaterial() {
         Course course =
                 Course.builder()
-                        .title(".net")
+                        .title("DSA")
                         .credit(6)
                         .build();
 
         CourseMaterial courseMaterial =
                 CourseMaterial.builder()
-                        .url("www.google.com")
+                        .url("www.ahanadatta.com")
                         .course(course)
                         .build();
 
